@@ -1,0 +1,44 @@
+# Keep local tooling, generated native projects and output out of cloud builds.
+node_modules/
+/.claude/
+/.codex/
+/AGENTS.md
+/CLAUDE.md
+/.vscode/
+/.idea/
+.expo/
+dist/
+web-build/
+expo-env.d.ts
+.kotlin/
+*.orig.*
+*.jks
+*.p8
+*.p12
+*.key
+*.mobileprovision
+*.pem
+.metro-health-check*
+npm-debug.*
+yarn-debug.*
+yarn-error.*
+*.log
+.eslintcache
+.prettiercache
+coverage/
+test-results/
+.DS_Store
+Thumbs.db
+Desktop.ini
+.env
+.env.*
+!.env.example
+GoogleService-Info.plist
+*.tsbuildinfo
+/ios
+/android
+
+# These client-side Firebase settings are needed on the Expo build server.
+# They remain ignored by Git. Do not place server secrets in these files.
+!.env
+!google-services.json

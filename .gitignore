@@ -3,6 +3,14 @@
 # dependencies
 node_modules/
 
+# local assistant and editor files
+/.claude/
+/.codex/
+/AGENTS.md
+/CLAUDE.md
+/.vscode/
+/.idea/
+
 # Expo
 .expo/
 dist/
@@ -25,13 +33,28 @@ expo-env.d.ts
 npm-debug.*
 yarn-debug.*
 yarn-error.*
+*.log
+
+# local caches and test reports
+.eslintcache
+.prettiercache
+coverage/
+test-results/
 
 # macOS
 .DS_Store
 *.pem
 
+# Windows
+Thumbs.db
+Desktop.ini
+
 # local env files
-.env*.local
+.env
+.env.*
+!.env.example
+google-services.json
+GoogleService-Info.plist
 
 # typescript
 *.tsbuildinfo
